@@ -22,3 +22,10 @@ function forcontu_hello_install() {
   ]);
   $term->save();
 }
+
+/**
+ * Implements hook_uninstall().
+ */
+function forcontu_hello_uninstall() {
+  \Drupal::state()->delete('forcontu_hello.test');
+}
