@@ -1,0 +1,9 @@
+<?php
+
+/**
+ * @file
+ * Module file for Forcontu Hello
+ * This module creates a static page with a welcome message.
+ */
+
+
