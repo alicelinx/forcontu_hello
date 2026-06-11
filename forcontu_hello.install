@@ -21,6 +21,8 @@ function forcontu_hello_install() {
     'vid' => 'tags',
   ]);
   $term->save();
+
+  \Drupal::messenger()->addMessage(t('A new term has been added.'));
 }
 
 /**
