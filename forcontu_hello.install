@@ -23,6 +23,8 @@ function forcontu_hello_install() {
   $term->save();
 
   \Drupal::messenger()->addMessage(t('A new term has been added.'));
+
+  \Drupal::logger('forcontu_hello')->info('forcontu_hello module installed.');
 }
 
 /**
@@ -30,4 +32,6 @@ function forcontu_hello_install() {
  */
 function forcontu_hello_uninstall() {
   \Drupal::state()->delete('forcontu_hello.test');
+
+  \Drupal::logger('forcontu_hello')->warning('forcontu_hello module uninstalled.');
 }
